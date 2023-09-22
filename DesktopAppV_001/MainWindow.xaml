@@ -23,7 +23,7 @@
         <Label x:Name="lbl_main" Content="TUTAJ WPISZ TEKST" HorizontalAlignment="Center" Margin="0,43,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lbl_reversed" Content="TEKST ODWRÓCONY" HorizontalAlignment="Center" Margin="0,162,0,0" VerticalAlignment="Top"/>
         <Label x:Name="lbl_mirror" Content="ODBICIE LUSTRZANE TEKSTU" HorizontalAlignment="Center" Margin="0,265,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btn_clear" Content="Clear" HorizontalAlignment="Center" Height="41" Margin="0,361,0,0" VerticalAlignment="Top" Width="188" Click="btn_clear_Click"/>
+        <Button x:Name="btn_clear" Content="Clear" HorizontalAlignment="Center" Height="41" VerticalAlignment="Bottom" Width="188" Click="btn_clear_Click" Margin="0,0,0,20"/>
 
     </Grid>
 </Window>

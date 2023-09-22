@@ -14,8 +14,8 @@
         </Grid.ColumnDefinitions>
         <Button x:Name="btn_linkedin" Content="LinkedIn" HorizontalAlignment="Center" Height="45" VerticalAlignment="Top" Width="650" Margin="0,56,0,0" Click="btn_linkedin_Click" Grid.Column="2"/>
         <Button x:Name="btn_GitHub" Content="GitHub" HorizontalAlignment="Center" Height="45" VerticalAlignment="Top" Width="650" Click="btn_GitHub_Click" Margin="0,172,0,0" Grid.Column="2"/>
-        <Button x:Name="btn_aboutMePage" Content="Page about me in build process" HorizontalAlignment="Center" Height="45" VerticalAlignment="Top" Width="650" Click="btn_aboutMePage_Click" Margin="0,285,0,0" Grid.Column="2" />
-        <Button x:Name="btn_back" Content="Back" HorizontalAlignment="Center" Height="41" Margin="0,368,0,0" VerticalAlignment="Top" Width="168" RenderTransformOrigin="0.531,0.49" Click="btn_back_Click" Grid.Column="2"/>
+        <Button x:Name="btn_aboutMePage" Content="Page about me (under development)" HorizontalAlignment="Center" Height="45" VerticalAlignment="Top" Width="650" Click="btn_aboutMePage_Click" Margin="0,285,0,0" Grid.Column="2" />
+        <Button x:Name="btn_back" Content="Back" HorizontalAlignment="Center" Height="41" VerticalAlignment="Bottom" Width="168" RenderTransformOrigin="0.531,0.49" Click="btn_back_Click" Grid.Column="2" Margin="0,0,0,20"/>
 
     </Grid>
 </Window>

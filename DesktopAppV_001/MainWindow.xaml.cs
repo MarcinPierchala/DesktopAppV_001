@@ -26,9 +26,9 @@ namespace DesktopAppV_001
         {
             
             InitializeComponent();
-            TextBox_01.Text = "";
-            TextBox_02.Text = "";
-            TB_03.Text = "";
+            TextBox_01.Text = "CZEŚĆ ĆŚEZC";
+            //TextBox_02.Text = "";
+            //TB_03.Text = "";
         }
         public void SetLabel_01(string txt)
         {
