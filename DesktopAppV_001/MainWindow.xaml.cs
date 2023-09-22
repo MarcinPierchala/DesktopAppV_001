@@ -80,5 +80,11 @@ namespace DesktopAppV_001
             //TextBox_02.Text = "";
             //TB_03.Text = "";
         }
+
+        private void btn_contact_Click(object sender, RoutedEventArgs e)
+        {
+            ContactMe contactMe = new ContactMe();
+            contactMe.Show();
+        }
     }
 }
