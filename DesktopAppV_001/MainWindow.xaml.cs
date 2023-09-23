@@ -92,5 +92,11 @@ namespace DesktopAppV_001
             Weather weather = new Weather();
             weather.Show();
         }
+
+        private void btn_external_ip_Click(object sender, RoutedEventArgs e)
+        {
+            FindAddress findAddress = new FindAddress();
+            findAddress.Show();
+        }
     }
 }
