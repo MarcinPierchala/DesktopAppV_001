@@ -86,5 +86,11 @@ namespace DesktopAppV_001
             ContactMe contactMe = new ContactMe();
             contactMe.Show();
         }
+
+        private void btn_weather_Click(object sender, RoutedEventArgs e)
+        {
+            Weather weather = new Weather();
+            weather.Show();
+        }
     }
 }
