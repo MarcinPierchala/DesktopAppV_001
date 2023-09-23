@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopAppV_001"
         mc:Ignorable="d"
-        Title="Weather" Height="450" Width="800">
+        Title="Weather" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label x:Name="lbl_giveCity" Content="PODAJ NAZWĘ MIEJSCOWOŚCI" HorizontalAlignment="Left" Margin="33,10,0,0" VerticalAlignment="Top"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lbl_giveCity" Content="PODAJ NAZWĘ MIEJSCOWOŚCI" HorizontalAlignment="Left" Margin="33,10,0,0" VerticalAlignment="Top" Height="26" Width="178"/>
         <TextBox x:Name="tb_city" HorizontalAlignment="Left" Height="39" Margin="33,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="392" TextAlignment="Center" FontWeight="Bold" FontSize="16"/>
         <Button x:Name="btn_search_weather" Content="Sprawdź pogodę" HorizontalAlignment="Left" Height="39" Margin="475,36,0,0" VerticalAlignment="Top" Width="285" Click="btn_search_weather_Click"/>
         <Label x:Name="lbl_temp" Content="Temperatura" HorizontalAlignment="Left" Height="31" Margin="33,86,0,0" VerticalAlignment="Top" Width="196"/>
