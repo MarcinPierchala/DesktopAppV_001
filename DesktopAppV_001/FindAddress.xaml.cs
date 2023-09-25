@@ -33,25 +33,33 @@ namespace DesktopAppV_001
 
         private void btn_find_ipp_Click(object sender, RoutedEventArgs e)
         {
+            giveMeAnAddress();
+        }
+
+        private async Task giveMeAnAddress()
+        {
             try
             {
                 using (WebClient wc = new WebClient())
                 {
+                    //var json = string.Empty;
                     string url = string.Format("http://checkip.dyndns.org/");
-                    var json = wc.DownloadString(url);
+                    var json = await wc.DownloadStringTaskAsync(url);
                     //Thread.Sleep(3000);
                     string result = "";
-                    foreach(char c in json)
+                    foreach (char c in json)
                     {
-                        if(c == '.' || Char.IsDigit(c))
+                        if (c == '.' || Char.IsDigit(c))
                         {
                             result += c;
                         }
                     }
                     tb_ext_ip.Text = result;
+                    return;
                 }
+
             }
-            catch { }
+            catch { return; ; }
         }
     }
 }
