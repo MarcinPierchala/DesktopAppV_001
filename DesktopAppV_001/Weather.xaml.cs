@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System;
 using System.IO;
 using System.Net;
 using System.Windows;
@@ -28,7 +29,7 @@ namespace DesktopAppV_001
                         string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", tb_city.Text, Apikey);
                         var json = wc.DownloadString(url);
                         WeatherData.root Info = JsonConvert.DeserializeObject<WeatherData.root>(json);
-                        tb_temp.Text = (Info.main.temp - 273.15).ToString() + " \u00B0" + "C";
+                        tb_temp.Text = (Math.Round((Info.main.temp - 273.15),1)).ToString() + " \u00B0" + "C";
                         tb_cloud.Text = Info.weather[0].description.ToUpper();
                         tb_humid.Text = Info.main.humidity.ToString() + " %";
                         tb_wind.Text = Info.wind.speed.ToString() + " m/s";
