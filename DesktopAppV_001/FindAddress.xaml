@@ -13,7 +13,7 @@
         </Grid.ColumnDefinitions>
         <Button x:Name="btn_find_ipp" Content="Find External Ip Address" HorizontalAlignment="Center" Height="91" Margin="0,70,0,0" VerticalAlignment="Top" Width="448" Click="btn_find_ipp_Click" Grid.Column="1"/>
         <TextBox x:Name="tb_ext_ip" HorizontalAlignment="Left" Height="68" Margin="100,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="576" FontSize="48" FontWeight="Bold" TextAlignment="Center" Grid.Column="1"/>
-        <Button x:Name="btn_back" Content="Back" HorizontalAlignment="Center" Height="44" Margin="0,370,0,0" VerticalAlignment="Top" Width="260" Click="btn_back_Click" Grid.Column="1"/>
+        <Button x:Name="btn_back" Content="Back" HorizontalAlignment="Center" Height="44" VerticalAlignment="Bottom" Width="260" Click="btn_back_Click" Grid.Column="1" Margin="0,0,0,20"/>
 
     </Grid>
 </Window>
