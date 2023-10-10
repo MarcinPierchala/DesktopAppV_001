@@ -1,0 +1,16 @@
+﻿<Window x:Class="DesktopAppV_001.LearningLetters"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopAppV_001"
+        mc:Ignorable="d"
+        Title="LearningLetters" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="btn_start" Content="START GAME" HorizontalAlignment="Center" Height="61" Margin="0,39,0,0" VerticalAlignment="Top" Width="264" Click="btn_start_Click"/>
+        <Button x:Name="btn_back" Content="BACK" HorizontalAlignment="Left" Height="61" Margin="484,326,0,0" VerticalAlignment="Top" Width="264" Click="btn_back_Click"/>
+        <TextBox x:Name="txt_letter" HorizontalAlignment="Center" Height="183" Margin="0,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" TextAlignment="Center" FontSize="120"/>
+        <TextBox x:Name="txt_inp_user_hidden" HorizontalAlignment="Left" Height="183" Margin="44,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" KeyDown="OnKeyDownHandler" FontSize="120" TextAlignment="Center"/>
+
+    </Grid>
+</Window>

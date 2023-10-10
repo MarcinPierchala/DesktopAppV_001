@@ -13,7 +13,7 @@
         <TextBox x:Name="TB_03" HorizontalAlignment="Center" Height="40" Margin="0,297,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="700" TextAlignment="Center"/>
         <Menu HorizontalAlignment="Center" Height="29" VerticalAlignment="Top" Width="780">
             <Button Content="2_develop" Height="25" Width="96"/>
-            <Button Content="2_develop" Height="25" Width="96"/>
+            <Button x:Name="btn_learningLetters" Content="Learning Letters" Height="25" Width="96" Click="btn_learningLetters_Click"/>
             <Button x:Name="btn_external_ip" Content="EXTERNAL IP" Height="25" Width="96" Click="btn_external_ip_Click"/>
             <Button x:Name="btn_weather" Content="API Weather" Height="25" Width="96" Click="btn_weather_Click"/>
             <Button x:Name="btn_contact" Content="Contact Me" Height="25" Width="96" Click="btn_contact_Click"/>

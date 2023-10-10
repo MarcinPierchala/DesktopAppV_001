@@ -98,5 +98,11 @@ namespace DesktopAppV_001
             FindAddress findAddress = new FindAddress();
             findAddress.Show();
         }
+
+        private void btn_learningLetters_Click(object sender, RoutedEventArgs e)
+        {
+            LearningLetters learningLetters = new LearningLetters();
+            learningLetters.Show();
+        }
     }
 }
