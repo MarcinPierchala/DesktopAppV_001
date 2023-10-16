@@ -1,0 +1,16 @@
+﻿<Window x:Class="DesktopAppV_001.ChatConversation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopAppV_001"
+        mc:Ignorable="d"
+        Title="ChatConversation" Height="450" Width="800" WindowStartupLocation="CenterOwner">
+    <Grid>
+        <Button x:Name="btn_say_hello" Content="SAY HELLO" Height="52" Margin="0,32,40,0" VerticalAlignment="Top" Width="131" HorizontalAlignment="Right"/>
+        <Button x:Name="btn_back" Content="BACK" HorizontalAlignment="Right" Height="52" Margin="0,0,40,40" VerticalAlignment="Bottom" Width="131" Click="btn_back_Click"/>
+        <TextBox x:Name="txt_conversation" HorizontalAlignment="Left" Height="299" Margin="24,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="574"/>
+        <TextBox x:Name="txt_query" HorizontalAlignment="Left" Height="52" Margin="24,32,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="574" KeyDown="OnKeyDownHandler"/>
+
+    </Grid>
+</Window>

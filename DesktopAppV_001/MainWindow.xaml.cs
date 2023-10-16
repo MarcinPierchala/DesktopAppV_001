@@ -104,5 +104,11 @@ namespace DesktopAppV_001
             LearningLetters learningLetters = new LearningLetters();
             learningLetters.Show();
         }
+
+        private void btn_goToChat_Click(object sender, RoutedEventArgs e)
+        {
+            ChatConversation chatConversation = new ChatConversation();
+            chatConversation.Show();
+        }
     }
 }

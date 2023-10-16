@@ -59,6 +59,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="ApplicationData.cs" />
+    <Compile Include="ChatConversation.xaml.cs">
+      <DependentUpon>ChatConversation.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FindAddress.xaml.cs">
       <DependentUpon>FindAddress.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,10 @@
     </Compile>
     <Compile Include="WeatherData.cs" />
     <Page Include="AboutMe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ChatConversation.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
