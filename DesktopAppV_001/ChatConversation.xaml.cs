@@ -40,7 +40,7 @@ namespace DesktopAppV_001
                 var request = new
                 {
                     prompt = defaultPrompt,
-                    max_tokens = 50
+                    max_tokens = 2000
                 };
 
                 var jsonRequest = Newtonsoft.Json.JsonConvert.SerializeObject(request);

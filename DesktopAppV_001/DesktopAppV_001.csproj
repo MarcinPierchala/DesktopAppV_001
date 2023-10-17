@@ -62,6 +62,7 @@
     <Compile Include="ChatConversation.xaml.cs">
       <DependentUpon>ChatConversation.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChatData.cs" />
     <Compile Include="FindAddress.xaml.cs">
       <DependentUpon>FindAddress.xaml</DependentUpon>
     </Compile>
