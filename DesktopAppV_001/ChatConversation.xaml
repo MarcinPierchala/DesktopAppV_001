@@ -5,12 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopAppV_001"
         mc:Ignorable="d"
-        Title="ChatConversation" Height="450" Width="800" WindowStartupLocation="CenterOwner">
+        Title="ChatConversation" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="btn_say_hello" Content="SAY HELLO" Height="52" Margin="0,32,40,0" VerticalAlignment="Top" Width="131" HorizontalAlignment="Right"/>
-        <Button x:Name="btn_back" Content="BACK" HorizontalAlignment="Right" Height="52" Margin="0,0,40,40" VerticalAlignment="Bottom" Width="131" Click="btn_back_Click"/>
-        <TextBox x:Name="txt_conversation" HorizontalAlignment="Left" Height="299" Margin="24,95,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="574"/>
-        <TextBox x:Name="txt_query" HorizontalAlignment="Left" Height="52" Margin="24,32,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="574" KeyDown="OnKeyDownHandler"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn_say_hello" Content="SAY HELLO" Height="52" Margin="0,32,40,0" VerticalAlignment="Top" Width="131" HorizontalAlignment="Right" Grid.ColumnSpan="2"/>
+        <Button x:Name="btn_back" Content="BACK" HorizontalAlignment="Right" Height="52" Margin="0,0,40,40" VerticalAlignment="Bottom" Width="131" Click="btn_back_Click" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txt_conversation" HorizontalAlignment="Left" Height="299" Margin="24,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="574" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="txt_query" HorizontalAlignment="Left" Height="52" Margin="24,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="574" KeyDown="OnKeyDownHandler" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
