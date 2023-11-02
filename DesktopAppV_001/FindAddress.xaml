@@ -11,9 +11,10 @@
             <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="197*"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btn_find_ipp" Content="Find External Ip Address" HorizontalAlignment="Center" Height="91" Margin="0,70,0,0" VerticalAlignment="Top" Width="448" Click="btn_find_ipp_Click" Grid.Column="1"/>
-        <TextBox x:Name="tb_ext_ip" HorizontalAlignment="Left" Height="68" Margin="100,228,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="576" FontSize="48" FontWeight="Bold" TextAlignment="Center" Grid.Column="1"/>
+        <Button x:Name="btn_find_ipp" Content="Find External Ip Address" HorizontalAlignment="Center" Height="91" Margin="0,40,0,0" VerticalAlignment="Top" Width="448" Click="btn_find_ipp_Click" Grid.Column="1"/>
+        <TextBox x:Name="tb_ext_ip" HorizontalAlignment="Left" Height="68" Margin="100,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="576" FontSize="48" FontWeight="Bold" TextAlignment="Center" Grid.Column="1"/>
         <Button x:Name="btn_back" Content="Back" HorizontalAlignment="Center" Height="44" VerticalAlignment="Bottom" Width="260" Click="btn_back_Click" Grid.Column="1" Margin="0,0,0,20"/>
+        <Button x:Name="btn_sendMail" Content="Send Mail Notification" HorizontalAlignment="Center" Height="44" VerticalAlignment="Top" Width="260" Grid.Column="1" Margin="0,243,0,0" Click="btn_sendMail_Click"/>
 
     </Grid>
 </Window>
