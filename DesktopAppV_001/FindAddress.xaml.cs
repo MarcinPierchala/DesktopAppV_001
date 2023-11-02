@@ -70,7 +70,7 @@ namespace DesktopAppV_001
             string mailFromDisplayName = "adminserver";
             string mailServer = "smtp.poczta.onet.pl";
             SmtpClient client = new SmtpClient(mailServer);
-            client.Port = 465;
+            client.Port = 587;// 465;
             // Use asusming OAuth authentication (need to create an app password)
             client.Credentials = new NetworkCredential(mailFrom, ApplicationData.MailPass);
             client.EnableSsl = true;
@@ -119,7 +119,8 @@ namespace DesktopAppV_001
             }
             else
             {
-                
+                SendEmail("marcin.pierchala@icloud.com", "Ext IP Notification",
+                    "Coś poszło nie tak - spróbuj ponownie");
             }
             
         }
