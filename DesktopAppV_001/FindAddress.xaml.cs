@@ -112,15 +112,16 @@ namespace DesktopAppV_001
 
         private void btn_sendMail_Click(object sender, RoutedEventArgs e)
         {
+            var actualMoment = DateTime.Now.ToString();
             if(this.tb_ext_ip.Text.Length > 0)
             {
                 SendEmail("marcin.pierchala@icloud.com", "Ext IP Notification", 
-                    "Aktualny adres zewnętrzny servera to: " + this.tb_ext_ip.Text);
+                    "Aktualny adres zewnętrzny servera to: " + this.tb_ext_ip.Text + "\n" + actualMoment);
             }
             else
             {
                 SendEmail("marcin.pierchala@icloud.com", "Ext IP Notification",
-                    "Coś poszło nie tak - spróbuj ponownie");
+                    "Coś poszło nie tak - spróbuj ponownie" + "\n" + actualMoment);
             }
             
         }
